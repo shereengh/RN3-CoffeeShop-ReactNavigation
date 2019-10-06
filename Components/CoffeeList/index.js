@@ -23,3 +23,18 @@ const CoffeeList = () => {
 };
 
 export default observer(CoffeeList);
+
+CoffeeList.navigationOptions = ({ navigation }) => {
+  return {
+    title: "Coffee List",
+    headerLeft: null,
+    headerRight: (
+      <Icon
+        type="FontAwesome"
+        name="
+location-arrow"
+        onPress={() => navigation.navigate("CartScreen")}
+      />
+    )
+  };
+};
