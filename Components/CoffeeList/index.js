@@ -7,6 +7,7 @@ import { Icon } from "native-base";
 
 //Components
 import CoffeeItem from "./CoffeeItem";
+import CartIcon from "../CartIcon";
 
 // Data
 import cafes from "../../data/cafes";
@@ -29,14 +30,6 @@ CoffeeList.navigationOptions = ({ navigation }) => {
   return {
     title: "Coffee List",
     headerLeft: null,
-    headerRight: (
-      <Icon
-        type="
-        MaterialIcons"
-        name="
-shopping-cart"
-        onPress={() => navigation.navigate("CartScreen")}
-      />
-    )
+    headerRight: <CartIcon />
   };
 };

@@ -21,6 +21,7 @@ import styles from "./styles";
 
 // Data
 import cafes from "../../data/cafes";
+import CartIcon from "../CartIcon";
 
 class CoffeeDetail extends Component {
   state = {
@@ -104,14 +105,6 @@ CoffeeDetail.navigationOptions = ({ navigation }) => {
   return {
     title: cafe.name,
     headerLeft: null,
-    headerRight: (
-      <Icon
-        type="
-        MaterialIcons"
-        name="
-shopping-cart"
-        onPress={() => navigation.navigate("CartScreen")}
-      />
-    )
+    headerRight: <CartIcon />
   };
 };
