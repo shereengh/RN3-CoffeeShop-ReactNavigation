@@ -3,6 +3,7 @@ import { observer } from "mobx-react";
 
 // NativeBase Components
 import { List, Content } from "native-base";
+import { Icon } from "native-base";
 
 //Components
 import CoffeeItem from "./CoffeeItem";
@@ -22,7 +23,7 @@ const CoffeeList = () => {
   );
 };
 
-export default observer(CoffeeList);
+export default CoffeeList;
 
 CoffeeList.navigationOptions = ({ navigation }) => {
   return {
@@ -30,9 +31,10 @@ CoffeeList.navigationOptions = ({ navigation }) => {
     headerLeft: null,
     headerRight: (
       <Icon
-        type="FontAwesome"
+        type="
+        MaterialIcons"
         name="
-location-arrow"
+shopping-cart"
         onPress={() => navigation.navigate("CartScreen")}
       />
     )
