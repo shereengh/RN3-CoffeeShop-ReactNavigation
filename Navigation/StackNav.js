@@ -4,13 +4,17 @@ import List from "../Components/CoffeeList";
 import Detail from "../Components/CoffeeDetail";
 import Login from "../Components/Login";
 import Cart from "../Components/CoffeeCart";
+import Profile from "../Components/Profile";
+import History from "../Components/OrderHistory";
 const StackNav = createStackNavigator(
   {
     //give names to your components that you will be using throughout your project
     ListScreen: List,
     DetailScreen: Detail,
     LoginScreen: Login,
-    CartScreen: Cart
+    CartScreen: Cart,
+    ProfileScreen: Profile,
+    HistoryScreen: History
   },
   {
     //define the intial component when the app runs

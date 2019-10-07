@@ -19,7 +19,7 @@ const CoffeeCart = () => {
   return (
     <List>
       {cartItems}
-      <Button full danger>
+      <Button onPress={() => navigation.navigate("OrderScreen")} full danger>
         <Text>Checkout</Text>
       </Button>
     </List>

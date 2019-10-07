@@ -26,7 +26,7 @@ const CoffeeList = () => {
 
 export default CoffeeList;
 
-CoffeeList.navigationOptions = ({ navigation }) => {
+CoffeeList.navigationOptions = () => {
   return {
     title: "Coffee List",
     headerLeft: null,
