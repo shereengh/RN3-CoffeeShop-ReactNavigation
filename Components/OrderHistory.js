@@ -2,25 +2,9 @@ import React, { Component } from "react";
 import { observer } from "mobx-react";
 
 // NativeBase Components
-import {
-  Thumbnail,
-  Text,
-  Button,
-  Left,
-  Body,
-  Right,
-  List,
-  ListItem,
-  Picker,
-  Content,
-  Icon,
-  Container,
-  CardItem
-} from "native-base";
+import { Thumbnail, Text, Card, Container, CardItem } from "native-base";
 
-// Style
-import styles from "./styles";
-
+import CartIcon from "./CartIcon";
 const OrderHistory = () => {
   return (
     <Container>
@@ -45,7 +29,7 @@ const OrderHistory = () => {
 
 export default OrderHistory;
 
-OrderHistoy.navigationOptions = () => {
+OrderHistory.navigationOptions = () => {
   return {
     title: "Previous Orders",
     headerLeft: null,

@@ -1,5 +1,4 @@
 import React from "react";
-import { observer } from "mobx-react";
 
 // NativeBase Components
 import { Text, List, Button } from "native-base";
@@ -10,7 +9,7 @@ import CartItem from "./CartItem";
 //Data
 import items from "../../data/items";
 
-const CoffeeCart = () => {
+const CoffeeCart = ({ navigation }) => {
   let cartItems;
   if (items) {
     cartItems = items.map(item => <CartItem item={item} key={item.id} />);
@@ -26,4 +25,4 @@ const CoffeeCart = () => {
   );
 };
 
-export default observer(CoffeeCart);
+export default CoffeeCart;

@@ -2,7 +2,7 @@ import { createStackNavigator } from "react-navigation-stack";
 // import your components here they should be full screens
 
 import Cart from "../Components/CoffeeCart";
-import OrderHistoy from "../Components/OrderHistoy";
+import OrderHistoy from "../Components/OrderHistory";
 import React, { Component } from "react";
 import { Icon } from "native-base";
 const OrdersTab = createStackNavigator(
@@ -13,8 +13,6 @@ const OrdersTab = createStackNavigator(
     OrderScreen: OrderHistoy
   },
   {
-    //define the intial component when the app runs
-    initialRouteName: "LoginScreen",
     navigationOptions: {
       tabBarIcon: ({ tintColor }) => (
         <Icon type="FontAwesome5" name="shopping-cart" />

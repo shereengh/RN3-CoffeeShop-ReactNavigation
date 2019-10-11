@@ -15,11 +15,9 @@ import {
   Content
 } from "native-base";
 
-// Style
-import styles from "./styles";
-
 // Data
 
 const Profile = () => {
   return <Text>Shereen's profile</Text>;
 };
+export default Profile;

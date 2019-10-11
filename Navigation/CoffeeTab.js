@@ -11,8 +11,6 @@ const CoffeeTab = createStackNavigator(
     DetailScreen: Detail
   },
   {
-    //define the intial component when the app runs
-    initialRouteName: "LoginScreen",
     navigationOptions: {
       tabBarIcon: ({ tintColor }) => <Icon type="FontAwesome5" name="coffee" />,
       activeTintColor: "#b8cdd0",
